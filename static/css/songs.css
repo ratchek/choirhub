@@ -157,6 +157,9 @@
     left: 0;
     object-fit: cover;
   }
+  #sbsr-1444 audio {
+    margin-left: 1em;
+  }
 }
 
 /* Small Desktop - 1024px */
