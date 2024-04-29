@@ -1,0 +1,23 @@
+# Next
+- [ ] Document project/app responsibilities/structure
+- [ ] Create song display snippet
+
+
+- [ ] Replace navbar with something useful
+
+# Future
+- [ ] Add favicon
+- [ ] Go through argon templates and see if I have all the templates
+- [ ] Make navbar start out as open on desktop (and as closed on mobile)
+- [ ] Make navbar remember whether the navbar was closed or open when reloading/changing pages (this isn't gonna be that simple. For example, you want the default behavior when having clicked a link on mobile to be for the bar to be hidden on the next page. But you _don't_ want this on desktop. Probably gonna have to use javascript and django's context variables?)
+
+# In production
+- [ ] Figure out a way of serving media files 
+
+# Before deploying 
+- [ ] Make sure HTTPS is enabled
+- [ ] Change allauth setting ACCOUNT_DEFAULT_HTTP_PROTOCOL to 'https'
+- [ ] Change allauth setting ACCOUNT_EMAIL_VERIFICATION to 'mandatory'
+
+
+# Done
