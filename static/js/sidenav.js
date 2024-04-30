@@ -5,13 +5,12 @@ function toggleSidebar() {
 }
 
 // Event listener for arrows to show or hide submenus
-let arrow = document.querySelectorAll(".arrow");
-for (var i = 0; i < arrow.length; i++) {
-  arrow[i].addEventListener("click", (e) => {
-    let arrowParent = e.target.parentElement.parentElement; // Selecting the main parent of the arrow
-    arrowParent.classList.toggle("showMenu");
+let nav_dropdowns = document.querySelectorAll(".nav_li_with_dropdown");
+nav_dropdowns.forEach((dropdown) => {
+  dropdown.addEventListener("click", (e) => {
+    dropdown.classList.toggle("showMenu");
   });
-}
+});
 
 // Event listener for the sidebar toggle button
 let sidebarBtn = document.querySelector(".toggle-sidebar");
