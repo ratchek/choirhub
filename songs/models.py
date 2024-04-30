@@ -48,7 +48,7 @@ class SongGroup(models.Model):
     # TODO add owner and choir fields once those apps are working
     # owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='song_groups')
     # choir = models.ForeignKey(Choir, on_delete=models.CASCADE, related_name='song_groups')
-    songs = models.ManyToManyField(Song, related_name='song_groups', blank=True, null=True) # e.g. Christmas, Easter, April 13th concert, etc.
+    songs = models.ManyToManyField(Song, related_name='song_groups', blank=True) # e.g. Christmas, Easter, April 13th concert, etc.
 
     def __str__(self):
         return self.name
