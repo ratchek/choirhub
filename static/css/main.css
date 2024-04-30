@@ -241,6 +241,13 @@ body {
   font-size: 12px;
 }
 
+.sidebar .profile-details i {
+  color: var(--navTextColor);
+  font-size: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
 .sidebar.close {
   width: 78px;
 }

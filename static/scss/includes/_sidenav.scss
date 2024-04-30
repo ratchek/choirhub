@@ -148,6 +148,13 @@
 			white-space: nowrap;
 			font-size: 12px;
 		}
+    i {
+      color: var(--navTextColor);
+      font-size: 24px;
+      margin-right: 12px;
+      cursor: pointer;
+
+    }
 	}
 }
 .sidebar.close {
