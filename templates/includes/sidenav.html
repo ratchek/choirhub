@@ -1,3 +1,4 @@
+{% load static %}
 <div class="sidebar close">
     <a href="{% url 'index' %}">
         <div class="logo-details">
@@ -35,7 +36,7 @@
 
     <div class="profile-details">
         <div class="profile-content">
-        <!--<img src="image/profile.jpg" alt="profileImg">-->
+        <img src="{% static 'img/profile.webp' %}" alt="profileImg">
         </div>
         <div class="name-job">
         <div class="profile_name">Prem Shahi</div>
