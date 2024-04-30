@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
 :root {
+  /* ------------------- CS STYLES ------------------- */
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
   --primary: #ff6a3e;
   --primaryLight: #ffba43;
@@ -15,6 +15,11 @@
   --bodyFontSize: 1rem;
   /* 60px - 100px top and bottom */
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  /* ------------------- NAV STYLES ------------------- */
+  --navTextColor: #fff;
+  --navBackgroundColor: #11101d;
+  --navBackgroundHighlightColor: #1d1b31;
+  --font-family_1: 'Poppins', sans-serif;
 }
 
 body {
@@ -60,21 +65,13 @@ body {
   color: var(--bodyTextColor);
 }
 
-/* Google Fonts Import Link */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 260px;
-  background: #11101d;
+  background: var(--navBackgroundColor);
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -88,7 +85,7 @@ body {
 
 .sidebar .logo-details i {
   font-size: 30px;
-  color: #fff;
+  color: var(--navTextColor);
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -97,7 +94,7 @@ body {
 
 .sidebar .logo-details .logo_name {
   font-size: 22px;
-  color: #fff;
+  color: var(--navTextColor);
   font-weight: 600;
   transition: 0.3s ease;
   transition-delay: 0.1s;
@@ -120,7 +117,7 @@ body {
 }
 
 .sidebar .nav-links li:hover {
-  background: #1d1b31;
+  background: var(--navBackgroundHighlightColor);
 }
 
 .sidebar .nav-links li:hover .sub-menu.blank {
@@ -139,7 +136,7 @@ body {
   min-width: 78px;
   text-align: center;
   line-height: 50px;
-  color: #fff;
+  color: var(--navTextColor);
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -154,19 +151,19 @@ body {
 .sidebar .nav-links li a .link_name {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: var(--navTextColor);
   transition: all 0.4s ease;
 }
 
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #1d1b31;
+  background: var(--navBackgroundHighlightColor);
   display: none;
 }
 
 .sidebar .nav-links li .sub-menu a {
-  color: #fff;
+  color: var(--navTextColor);
   font-size: 15px;
   padding: 5px 0;
   white-space: nowrap;
@@ -205,7 +202,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1d1b31;
+  background: var(--navBackgroundHighlightColor);
   padding: 12px 0;
   transition: all 0.5s ease;
 }
@@ -221,19 +218,19 @@ body {
   object-fit: cover;
   border-radius: 16px;
   margin: 0 14px 0 12px;
-  background: #1d1b31;
+  background: var(--navBackgroundHighlightColor);
   transition: all 0.5s ease;
 }
 
 .sidebar .profile-details .profile_name {
-  color: #fff;
+  color: var(--navTextColor);
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
 }
 
 .sidebar .profile-details .job {
-  color: #fff;
+  color: var(--navTextColor);
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
@@ -317,13 +314,6 @@ body {
 .sidebar.close ~ .not-the-sidebar {
   left: 78px;
   width: calc(100% - 78px);
-}
-
-.one {
-  width: 80%;
-  margin-left: 10%;
-  background-color: black;
-  height: 400px;
 }
 
 .not-the-sidebar {

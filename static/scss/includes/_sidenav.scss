@@ -1,23 +1,10 @@
-$color_1: #fff;
-$color_2: #11101d;
-$font-family_1: 'Poppins', sans-serif;
-$background-color_1: black;
-
-/* Google Fonts Import Link */
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: $font-family_1;
-}
 .sidebar {
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 260px;
-	background: #11101d;
+	background: var(--navBackgroundColor);
 	z-index: 100;
 	transition: all 0.5s ease;
 	.logo-details {
@@ -27,7 +14,7 @@ $background-color_1: black;
 		align-items: center;
 		i {
 			font-size: 30px;
-			color: $color_1;
+			color: var(--navTextColor);
 			height: 50px;
 			min-width: 78px;
 			text-align: center;
@@ -35,7 +22,7 @@ $background-color_1: black;
 		}
 		.logo_name {
 			font-size: 22px;
-			color: $color_1;
+			color: var(--navTextColor);
 			font-weight: 600;
 			transition: 0.3s ease;
 			transition-delay: 0.1s;
@@ -53,7 +40,7 @@ $background-color_1: black;
 			list-style: none;
 			transition: all 0.4s ease;
 			&:hover {
-				background: #1d1b31;
+				background: var(--navBackgroundHighlightColor);
 				.sub-menu.blank {
 					top: 50%;
 					transform: translateY(-50%);
@@ -69,7 +56,7 @@ $background-color_1: black;
 				min-width: 78px;
 				text-align: center;
 				line-height: 50px;
-				color: $color_1;
+				color: var(--navTextColor);
 				font-size: 20px;
 				cursor: pointer;
 				transition: all 0.3s ease;
@@ -81,17 +68,17 @@ $background-color_1: black;
 				.link_name {
 					font-size: 18px;
 					font-weight: 400;
-					color: $color_1;
+					color: var(--navTextColor);
 					transition: all 0.4s ease;
 				}
 			}
 			.sub-menu {
 				padding: 6px 6px 14px 80px;
 				margin-top: -10px;
-				background: #1d1b31;
+				background: var(--navBackgroundHighlightColor);
 				display: none;
 				a {
-					color: $color_1;
+					color: var(--navTextColor);
 					font-size: 15px;
 					padding: 5px 0;
 					white-space: nowrap;
@@ -129,7 +116,7 @@ $background-color_1: black;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		background: #1d1b31;
+		background: var(--navBackgroundHighlightColor);
 		padding: 12px 0;
 		transition: all 0.5s ease;
 		.profile-content {
@@ -142,17 +129,17 @@ $background-color_1: black;
 			object-fit: cover;
 			border-radius: 16px;
 			margin: 0 14px 0 12px;
-			background: #1d1b31;
+			background: var(--navBackgroundHighlightColor);
 			transition: all 0.5s ease;
 		}
 		.profile_name {
-			color: $color_1;
+			color: var(--navTextColor);
 			font-size: 18px;
 			font-weight: 500;
 			white-space: nowrap;
 		}
 		.job {
-			color: $color_1;
+			color: var(--navTextColor);
 			font-size: 18px;
 			font-weight: 500;
 			white-space: nowrap;
@@ -234,12 +221,7 @@ $background-color_1: black;
 		}
 	}
 }
-.one {
-	width: 80%;
-	margin-left: 10%;
-	background-color: $background-color_1;
-	height: 400px;
-}
+
 .not-the-sidebar {
 	position: relative;
 	background: #E4E9F7;
@@ -252,13 +234,13 @@ $background-color_1: black;
 		display: flex;
 		align-items: center;
 		.bx-menu {
-			color: $color_2;
+			color: #11101d;
 			font-size: 35px;
 			margin: 0 15px;
 			cursor: pointer;
 		}
 		.text {
-			color: $color_2;
+			color: #11101d;
 			font-size: 35px;
 			font-size: 26px;
 			font-weight: 600;
