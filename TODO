@@ -1,10 +1,12 @@
 # Next
-- [ ] Add processing of pdf files during model save
 - [ ] Add events (models, views, in nav)
 - [ ] Add login functionality
 - [ ] Add profile views/page
 - [ ] Add choir leader views/flows
 - [ ] Add AJAX for choir leader views/flows in place
+- [ ] Add support for multiple choirs
+- [ ] Decide if songs and songfiles should belong to a choir or belong to a user (Probably the user)
+- [ ] make sure there's separation of files in the media folder
 
 - [ ] Document project/app responsibilities/structure
 
@@ -32,6 +34,7 @@
 - [x] Go through argon templates and see if I have all the templates
 - [x] Replace navbar with something useful
 - [x] Create song display snippet
+- [x] Add processing of pdf files during model save
 
 
 
