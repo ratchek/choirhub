@@ -66,8 +66,8 @@ class SongGroup(models.Model):
 ### Helper functions ###
 def create_img_from_pdf(pdf):
     """Creates an image of the first page of the pdf"""
-    images = convert_from_bytes(pdf.read())  # holds all the pages as an array of Pil images
+    images = convert_from_bytes(pdf.read(), size=(550,None))  # holds all the pages as an array of Pil images
     img_io = BytesIO()  # needed as an intemediary to save the file from Pillow library
-    images[0].save(img_io, "JPEG", quality=85)  # save image to BytesIO object
-    img = File(img_io, name=pdf.name[:-4] + ".jpg")  # create a django friendly File object
+    images[0].save(img_io, "WEBP", quality=70)  # save image to BytesIO object
+    img = File(img_io, name=pdf.name[:-4] + ".webp")  # create a django friendly File object
     return img
