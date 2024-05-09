@@ -19,7 +19,7 @@
             <ul class="sub-menu">
                 <li><a class="link_name" href="#">Groups</a></li>
                 {% for group in nav_groups %}
-                <li><a href="{% url 'display_group_songs' group.id %}">{{group.name}}</a></li>
+                <li><a href="{% url 'group-detail' group.id %}">{{group.name}}</a></li>
                 {% endfor %}
             </ul>
         </li>

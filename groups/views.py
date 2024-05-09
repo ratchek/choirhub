@@ -1,14 +1,10 @@
-from django.shortcuts import render, get_object_or_404
-from django.views import View
 from django.views import generic
 from .models import SongGroup
 
-class GroupView(View):
-    def get(self, request, pk,  *args, **kwargs):
-        song_group = get_object_or_404(SongGroup, pk=pk) # fetch the song group from the database
-        songs = song_group.songs.all() # fetch all songs in that group
-        print (songs)
-        return render(request, 'groups/display_group.html', {'songs': songs}) # pass the songs to the template
+class GroupView(generic.DetailView):
+    model = SongGroup
+    template_name = 'groups/display_group.html'
+    context_object_name = 'song_group'
 
 class GroupListView(generic.ListView):
     model = SongGroup
