@@ -9,7 +9,7 @@
 {% block content %}
 <div class="container">
 
-    {% for song in song_group.songs.all%}
+    {% for song in group.songs.all%}
         {% include "includes/display_song.html" %}
     {% endfor %}
 
