@@ -3,7 +3,7 @@ from django.views import View
 from django.views import generic
 from .models import SongGroup
 
-class SongGroupView(View):
+class GroupSongsView(View):
     def get(self, request, pk,  *args, **kwargs):
         song_group = get_object_or_404(SongGroup, pk=pk) # fetch the song group from the database
         songs = song_group.songs.all() # fetch all songs in that group
