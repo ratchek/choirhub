@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'users',
     'core',
     'songs',
+    'groups',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,7 @@ TEMPLATES = [
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
                 # Add the groups to the context (needed for navigation)
-                'songs.context_processors.add_song_groups_to_all_views',
+                'groups.context_processors.add_song_groups_to_all_views',
             ],
         },
     },
