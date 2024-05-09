@@ -22,6 +22,7 @@ from django.urls import include, path
 urlpatterns = [
     path("rt-admin/", admin.site.urls),
     path("", include("groups.urls")),
+    path("events", include("events.urls")),
     path('accounts/', include('allauth.urls')),
 
 ]

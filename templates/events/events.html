@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block content %}
+<div class="container">
+
+    {% for event in events%}
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <a href="{% url 'event-detail' event.id %}"  <h3 class="display-2">{{event.name}}</h3> </a>
+          </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

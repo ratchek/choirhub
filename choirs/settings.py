@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'core',
     'songs',
     'groups',
+    'events',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +86,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 # Add the groups to the context (needed for navigation)
                 'groups.context_processors.add_song_groups_to_all_views',
+                # Add the events to the context (needed for navigation)
+                'events.context_processors.add_events_to_all_views',
             ],
         },
     },

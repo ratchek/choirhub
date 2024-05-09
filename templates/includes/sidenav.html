@@ -23,6 +23,21 @@
                 {% endfor %}
             </ul>
         </li>
+        <li class="nav_li_with_dropdown">
+            <div class="icon-link">
+                <a href="#">
+                <i class='bx bx-collection' ></i>
+                <span class="link_name">Events</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Events</a></li>
+                {% for event in nav_events %}
+                <li><a href="{% url 'event-detail' event.id %}">{{event.name}}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
         <li>
             <a href="#">
                 <i class='bx bx-cog' ></i>

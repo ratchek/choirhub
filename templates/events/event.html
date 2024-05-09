@@ -1,0 +1,18 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'css/songs.css' %}" type="text/css">
+{% endblock stylesheets %}
+
+
+{% block content %}
+<div class="container">
+
+    {% for song in event.songs.all%}
+        {% include "includes/display_song.html" %}
+    {% endfor %}
+
+</div>
+
+{% endblock content %}
