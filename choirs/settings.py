@@ -84,10 +84,10 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
-                # Add the groups to the context (needed for navigation)
+                # Add the groups, events, and songs to every context (needed for navigation)
                 'groups.context_processors.add_song_groups_to_all_views',
-                # Add the events to the context (needed for navigation)
                 'events.context_processors.add_events_to_all_views',
+                'songs.context_processors.add_songs_to_all_views',
             ],
         },
     },

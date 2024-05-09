@@ -23,6 +23,22 @@
                 {% endfor %}
             </ul>
         </li>
+
+        <li class="nav_li_with_dropdown">
+            <div class="icon-link">
+                <a href="#">
+                <i class='bx bx-collection' ></i>
+                <span class="link_name">Songs</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+                <li><a class="link_name" href="#">Songs</a></li>
+                {% for song in nav_songs %}
+                <li><a href="{% url 'song-detail' song.id %}">{{song.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
         <li class="nav_li_with_dropdown">
             <div class="icon-link">
                 <a href="#">
