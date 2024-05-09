@@ -1,0 +1,7 @@
+site_name: Choirs Docs
+nav:
+  - Home: index.md
+  - Getting Started: installation.md
+  - Deployment: deployment.md
+  - Project Architecture: architecture.md
+theme: readthedocs
