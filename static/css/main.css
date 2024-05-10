@@ -124,11 +124,6 @@ body {
   background: var(--navBackgroundHighlightColor);
 }
 
-.sidebar .nav-links li:hover .sub-menu.blank {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .sidebar .nav-links li .icon-link {
   display: flex;
   align-items: center;

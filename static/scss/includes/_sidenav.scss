@@ -44,10 +44,6 @@
 			transition: all 0.4s ease;
 			&:hover {
 				background: var(--navBackgroundHighlightColor);
-				.sub-menu.blank {
-					top: 50%;
-					transform: translateY(-50%);
-				}
 			}
 			.icon-link {
 				display: flex;
