@@ -171,7 +171,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
 
@@ -190,6 +190,9 @@
             justify-content: space-between;
             align-items: stretch;
             position: relative;
+            margin-left: 10%;
+            margin-right: 10%;
+
         }
 
         .cs-content {
