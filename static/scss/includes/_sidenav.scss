@@ -9,12 +9,12 @@
 	transition: all 0.5s ease;
   a {
     text-decoration: none;
+		display: flex;
+		align-items: center;
   }
 	.logo-details {
 		height: 60px;
 		width: 100%;
-		display: flex;
-		align-items: center;
 		i {
 			font-size: 30px;
 			color: var(--navTextColor);
@@ -23,11 +23,21 @@
 			text-align: center;
 			line-height: 50px;
 		}
+      .nav-icon-container{
+				height: 50px;
+				min-width: 78px;
+				text-align: center;
+				line-height: 50px;
+
+      }
+      .nav-icon {
+        height: 90px;
+      }
 		.logo_name {
 			font-size: 22px;
 			color: var(--navTextColor);
 			font-weight: 600;
-			transition: 0.3s ease;
+			transition: opacity 0.4s ease;
 			transition-delay: 0.1s;
 		}
 	}
@@ -169,10 +179,21 @@
 	width: 78px;
 	.logo-details {
 		.logo_name {
+      transition: opacity 0.2s ease;
 			transition-delay: 0s;
 			opacity: 0;
 			pointer-events: none;
 		}
+          .nav-icon-container{
+				height: 50px;
+				min-width: 78px;
+				text-align: center;
+
+      }
+      .nav-icon {
+        height: 90px;
+        margin: auto
+      }
 	}
 	.nav-links {
 		overflow: visible;
@@ -242,7 +263,7 @@
 
 .not-the-sidebar {
 	position: relative;
-	background: #E4E9F7;
+	background: #dfe5f3;
 	height: 100vh;
 	left: 260px;
 	width: calc(100% - 260px);
