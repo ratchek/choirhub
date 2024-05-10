@@ -17,6 +17,7 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.shortcuts import render
 from django.urls import include, path
 
 urlpatterns = [
@@ -25,6 +26,8 @@ urlpatterns = [
     path("events/", include("events.urls")),
     path("songs/", include("songs.urls")),
     path('accounts/', include('allauth.urls')),
+    # Return base template as a placeholder for the homepage
+    path('', lambda request: render(request, 'layouts/base.html', {}), name='index'),
 
 ]
 
