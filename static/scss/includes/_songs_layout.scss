@@ -261,11 +261,13 @@
         flex-direction: column;
         align-items: flex-start;
         gap: calc(24 / 16 * 1rem);
+        width: 100%;
 
         .cs-li {
             list-style: none;
             padding: 0;
             margin: 0;
+            width: 100%;
         }
 
         .cs-h3 {
@@ -285,7 +287,12 @@
             margin: 0;
             color: var(--bodyTextColor);
         }
+
+        audio{
+          width: 100%;
+        }
     }
+
 }
 
 /* Dark Mode, copy and paste only the styles inside the #list-1113 brackets into your section's dark mode media query */
