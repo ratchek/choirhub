@@ -1,5 +1,8 @@
 from django.views import generic
 from .models import Song
+import logging
+
+logger = logging.getLogger(__name__)
 
 class SongView(generic.DetailView):
     model = Song
@@ -11,3 +14,7 @@ class SongListView(generic.ListView):
     template_name = 'songs/songs.html'
     context_object_name = 'songs'
     ordering = ['title']
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = "All songs"
+        return context

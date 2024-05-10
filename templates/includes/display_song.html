@@ -6,7 +6,7 @@
             <img loading="lazy" decoding="async" src="{{ song.score.img.url }}" alt="volunteers" width="650" height="600" aria-hidden="true">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Giving Back</span>
+            <span class="cs-topper">{{page_title}}</span>
             <h2 class="cs-title">{{song.title}}</h2>
             <ul class="cs-card-group">
                 {% for recording in song.recordings.all %}
