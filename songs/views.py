@@ -3,11 +3,11 @@ from .models import Song
 
 class SongView(generic.DetailView):
     model = Song
-    template_name = 'songs/group.html'
+    template_name = 'songs/song.html'
     context_object_name = 'song'
 
 class SongListView(generic.ListView):
     model = Song
-    template_name = 'songs/groups.html'
+    template_name = 'songs/songs.html'
     context_object_name = 'songs'
-    ordering = ['name']
+    ordering = ['title']
