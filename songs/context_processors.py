@@ -3,5 +3,5 @@ from .models import Song
 # needed for navigation
 def add_songs_to_all_views(request):
     return {
-        'nav_songs': Song.objects.all()
+        'nav_songs': Song.objects.all().order_by('title')
     }
