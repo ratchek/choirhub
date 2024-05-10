@@ -1,5 +1,8 @@
 # Next
-- [ ] Add events (models, views, in nav)
+- [ ] Add basic nav for testing purposes
+- [ ] Make the group-list view not the index
+
+
 - [ ] Add login functionality
 - [ ] Add profile views/page
 - [ ] Add choir leader views/flows
@@ -19,6 +22,7 @@
 - [ ] Add favicon
 - [ ] Make navbar start out as open on desktop (and as closed on mobile)
 - [ ] Make navbar remember whether the navbar was closed or open when reloading/changing pages (this isn't gonna be that simple. For example, you want the default behavior when having clicked a link on mobile to be for the bar to be hidden on the next page. But you _don't_ want this on desktop. Probably gonna have to use javascript and django's context variables?)
+- [ ] Don't allow user to change attendanceDeclaration once event has passed
 
 # In production
 - [ ] Figure out a way of serving media files
@@ -35,6 +39,8 @@
 - [x] Replace navbar with something useful
 - [x] Create song display snippet
 - [x] Add processing of pdf files during model save
+- [x] Rename display group songs???
+- [x] Add events (models, views, in nav)
 
 
 
