@@ -64,6 +64,18 @@
 				cursor: pointer;
 				transition: all 0.3s ease;
 			}
+      .nav-icon-container{
+				height: 50px;
+				min-width: 78px;
+				text-align: center;
+				line-height: 50px;
+
+      }
+      .nav-icon {
+        filter: brightness(0.3) invert(1);
+        height: 30px;
+        margin: auto
+      }
 			a {
 				display: flex;
 				align-items: center;
