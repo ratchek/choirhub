@@ -1,0 +1,71 @@
+$color_1: #333;
+$font-family_1: Arial, sans-serif;
+$background-color_1: #f9f9f9;
+
+.song-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: $background-color_1;
+    flex-wrap: wrap;
+
+    .image-column {
+      width: 100%;
+
+      .score-image {
+          img {
+              width: 100%;
+              max-width: 400px;
+              display: none;
+              margin: 0 auto;
+          }
+      }
+      .song-title, .recording-title {
+          color: $color_1;
+          font-family: $font-family_1;
+      }
+    }
+
+    .recording-column{
+      width: 100%;
+      margin: 5% 10%;
+
+      .recordings {
+          max-width: 100%;
+          .recording {
+              max-width: 100%;
+              margin-top: 10px;
+              padding-bottom: 10px;
+          }
+          audio {
+              max-width: 100%;
+              display: block;
+          }
+      }
+    }
+}
+
+@media (min-width: 769px) {
+    .song-section {
+      flex-direction: row;
+
+      .image-column {
+          display: block; // Assuming you want it visible on larger screens
+          min-width: 300px;
+          flex: 1;
+
+          .score-image {
+              img {
+                  display: block;
+              }
+          }
+      }
+    }
+    .recording-column {
+      flex: 1;
+    }
+}

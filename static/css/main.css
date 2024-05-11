@@ -25,6 +25,7 @@
 body {
   margin: 0;
   padding: 0;
+  background: #dfe5f3;
 }
 
 *, *:before, *:after {
@@ -360,7 +361,6 @@ body {
 
 .not-the-sidebar {
   position: relative;
-  background: #dfe5f3;
   height: 100%;
   left: 260px;
   width: calc(100% - 260px);

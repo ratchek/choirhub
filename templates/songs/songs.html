@@ -8,18 +8,10 @@
 
 {% block content %}
 
-<section id="reviews-864">
-    <div class="cs-container">
-        <ul class="cs-card-group">
+        <ul class="song-list">
             {% for song in songs%}
                 {% include "includes/display_song.html" %}
             {% endfor %}
         </ul>
-    </div>
-    <!--Top Left Quote-->
-    <img class="cs-quote1" aria-hidden="true" src="{% static 'img/icons/music-note-3-svgrepo-com.svg' %}" decoding="async" alt="quote icon" width="194" height="160">
-    <!--Top Right Quote-->
-    <img class="cs-quote2" aria-hidden="true" src="{% static 'img/icons/music-note-svgrepo-com.svg' %}" decoding="async" alt="quote icon" width="194" height="160">
-</section>
 
 {% endblock content %}

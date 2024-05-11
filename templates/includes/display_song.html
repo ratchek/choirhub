@@ -1,20 +1,21 @@
-<li class="cs-item">
-    <div class="cs-flex-group">
-        <span class="cs-name">
-            {{song.title}}
-        </span>
-    </div>
-    <ul id="list-1113" class="cs-ul">
-        {% for recording in song.recordings.all %}
-            <li class="cs-li">
-                <h3 class="cs-h3">{{recording.voice_group}}</h3>
+      <div class="song-section">
+          <div class="recording-column">
+              <h2 class="song-title">{{song.title}}</h2>
+              <div class="recordings">
+                {% for recording in song.recordings.all %}
+                <div class="recording">
+                    <h3 class="recording-title">{{recording.voice_group}}</h3>
                     <audio controls>
-                        <source src="{{recording.file.url}}"  type="audio/mpeg">
+                        <source src="{{recording.file.url}}" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-            </li>
-        {% endfor %}
-    </ul>
-    <div class="spacer"></div>
-    <a href="{{song.score.file.url}}" class="cs-button-1" aria-label="download the score">Get the Score</a>
-</li>
+                </div>
+                {% endfor %}
+              </div>
+          </div>
+          <div class="image-column">
+              <div class="score-image">
+                  <img src="{{song.score.img.url}}" alt="Score of the Song">
+              </div>
+          </div>
+      </div>
