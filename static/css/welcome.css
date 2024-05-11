@@ -1,18 +1,17 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap";
 .top-nav {
-  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #38444d;
-  margin-left: 3em;
 }
 
 .top-nav li {
   float: left;
+  list-style: none;
 }
 
-.top-nav li a, .top-nav .dropbtn {
+.top-nav li a, .top-nav li i, .top-nav li.toggle-sidebar, .top-nav .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -51,6 +50,10 @@
 
 .top-nav .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.top-nav img {
+  max-width: 80px;
 }
 
 * {

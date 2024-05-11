@@ -1,16 +1,15 @@
 .top-nav{
-    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #38444d;
-    margin-left: 3em;
 
   li {
     float: left;
+    list-style: none;
   }
 
-  li a, .dropbtn {
+  li a, li i, li.toggle-sidebar, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;

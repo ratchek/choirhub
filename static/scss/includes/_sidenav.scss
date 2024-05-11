@@ -267,23 +267,6 @@
 	left: 260px;
 	width: calc(100% - 260px);
 	transition: all 0.5s ease;
-	.top-bar {
-		height: 60px;
-		display: flex;
-		align-items: center;
-		.bx-menu {
-			color: #11101d;
-			font-size: 35px;
-			margin: 0 15px;
-			cursor: pointer;
-		}
-		.text {
-			color: #11101d;
-			font-size: 35px;
-			font-size: 26px;
-			font-weight: 600;
-		}
-	}
 }
 @media (max-width: 420px) {
 	.sidebar.close {
