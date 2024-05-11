@@ -1,4 +1,13 @@
 .allauth-forms {
   background-color: red;
-  padding: 5% 20%;
+  border-radius: 20px;
+  margin: 5% 5%;
+  padding: 1em;
+}
+
+@media (min-width: 769px) {
+  .allauth-forms {
+    margin: 5% 20%;
+    padding: 5em;
+  }
 }
