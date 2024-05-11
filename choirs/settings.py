@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django_sass',
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
     'users',
     'core',
     'songs',

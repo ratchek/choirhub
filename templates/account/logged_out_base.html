@@ -1,0 +1,28 @@
+{% extends "layouts/logged_out_base.html" %}
+    {% block head %}
+        {% block head_title %}{% endblock head_title %}
+        {% block extra_head %}
+        {% endblock extra_head %}
+    {% endblock head %}
+    {% block body %}
+
+    {% if messages %}
+    <div>
+      <strong>"Messages:"</strong>
+      <ul>
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="allauth-forms">
+      {% block content %}
+      {% endblock content %}
+    </div>
+    {% endblock body %}
+    {% block extra_body %}
+    {% endblock extra_body %}
+  </body>
+</html>
