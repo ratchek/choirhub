@@ -1,4 +1,5 @@
 # Next
+- [ ] Rework landing page to be my own
 - [ ] Add login functionality
 - [ ] Add profile views/page
 - [ ] Add choir leader views/flows
@@ -10,12 +11,20 @@
 - [ ] Document project/app responsibilities/structure
 
 
-# Waiting
-- [ ] Create dashboard frontend
-
+# Next week
+- [ ] Add login flows
+- [ ] Add profile settings
+- [ ] Fix styles and make it look nice
+- [ ] Add nice landing page
+- [ ] Add index page
+- [ ] Find a way to delete dash in head title (when there's no additional title comming in from django allauth)
+- [ ] Add favicon
+- [ ] Deploy
+- [ ] Upload test data
+- [ ] Rysiu admin site?
 
 # Future
-- [ ] Add favicon
+
 - [ ] Check if you can delete bootstrap stylesheet and scripts
 - [ ] Make navbar start out as open on desktop (and as closed on mobile)
 - [ ] Make navbar remember whether the navbar was closed or open when reloading/changing pages (this isn't gonna be that simple. For example, you want the default behavior when having clicked a link on mobile to be for the bar to be hidden on the next page. But you _don't_ want this on desktop. Probably gonna have to use javascript and django's context variables?)

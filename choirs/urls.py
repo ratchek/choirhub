@@ -22,12 +22,11 @@ from django.urls import include, path
 
 urlpatterns = [
     path("rt-admin/", admin.site.urls),
+    path("", include("core.urls")),
     path("groups/", include("groups.urls")),
     path("events/", include("events.urls")),
     path("songs/", include("songs.urls")),
     path('accounts/', include('allauth.urls')),
-    # Return base template as a placeholder for the homepage
-    path('', lambda request: render(request, 'layouts/base.html', {}), name='index'),
 
 ]
 
