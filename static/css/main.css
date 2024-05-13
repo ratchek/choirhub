@@ -392,6 +392,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
+  height: 60px;
 }
 
 .top-nav li {
@@ -440,10 +441,6 @@ body {
   display: block;
 }
 
-.top-nav {
-  height: 60px;
-}
-
 .top-nav .bx-menu {
   color: var(--navTextColor);
   font-size: 35px;
@@ -464,6 +461,14 @@ body {
   font-size: 35px;
   font-size: 26px;
   font-weight: 600;
+}
+
+.top-nav .right {
+  margin-left: auto;
+}
+
+.top-nav .logged-out-top-nav-logo {
+  max-width: 80px;
 }
 
 /*-- -------------------------- -->
