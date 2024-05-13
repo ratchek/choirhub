@@ -1,7 +1,8 @@
 
+{% load static %}
 <ul class="top-nav logged-in-nav">
     <li>
-        <i class='bx bx-menu toggle-sidebar' ></i>
+    <img class ='hamburger toggle-sidebar' src="{% static 'img/icons/hamburger-svgrepo-com.svg' %}" alt="grouped notes">
     </li>
     <li><a href="{% url 'index' %}">Home</a></li>
     <li><a href="{% url 'song-list' %}">Songs</a></li>
