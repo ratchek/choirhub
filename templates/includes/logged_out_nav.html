@@ -3,7 +3,8 @@
   <a href="#"><img src="{% static 'img/logo-choir-white.png' %}" class="logo"></a>
   <li><a href="{% url 'index' %}">Home</a></li>
   <li><a href="{% url 'about' %}">About</a></li>
-  <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+  <div class="right">
   <li><a href="{% url 'account_login' %}">Log in</a></li>
-  <li style="float:right"><a href="#about">About</a></li>
+  <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+  </div>
 </ul>

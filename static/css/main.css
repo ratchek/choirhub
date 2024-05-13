@@ -388,6 +388,9 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #38444d;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
 .top-nav li {
@@ -438,8 +441,6 @@ body {
 
 .top-nav {
   height: 60px;
-  display: flex;
-  align-items: center;
 }
 
 .top-nav .bx-menu {
