@@ -1,13 +1,66 @@
 .allauth-forms {
-  background-color: red;
-  border-radius: 20px;
-  margin: 5% 5%;
+  max-width: 500px;
+  margin: 20px auto;
   padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  /* Style the input fields */
+  /* Style the labels for better readability */
+  /* Styling the submit button */
+  /* Error message styling */
+}
+
+.allauth-forms input[type="text"],
+.allauth-forms input[type="email"],
+.allauth-forms input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.allauth-forms label[for="id_remember"] {
+  display: inline;
+  margin-right: 1em;
+}
+
+.allauth-forms label {
+  margin-top: 1em;
+  display: block;
+  color: #333;
+}
+
+.allauth-forms button {
+  display: block;
+  margin-top: 1em;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.allauth-forms button:hover {
+  background-color: #45a049;
+}
+
+.allauth-forms ul {
+  list-style-type: circle;
+  margin: 1em;
+  font-size: 0.8em;
+}
+
+.allauth-forms .errorlist {
+  color: red;
+  font-size: 0.8em;
 }
 
 @media (min-width: 769px) {
   .allauth-forms {
-    margin: 5% 20%;
     padding: 5em;
   }
 }
