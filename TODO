@@ -1,8 +1,20 @@
 # Next
-- [ ] Fix nav layouts
-- [ ] Add template inheritance to forms, so
-- [ ] Rework landing page to be my own
-- [ ] Add login functionality
+- [ ] Add name fields to login
+- [ ] Display name in sidenav
+- [ ] Make sidenav logout possible
+- [ ] Add a settings page where you can
+    - [ ] Change name
+    - [ ] Change email
+    - [ ] Change password
+- [ ] Check all allauth templates work
+- [ ] Fix mobile view
+- [ ] Fix nav for mobile view
+- [ ] Make sure message flashes appear in mobile view
+
+
+
+
+
 - [ ] Add profile views/page
 - [ ] Add choir leader views/flows
 - [ ] Add AJAX for choir leader views/flows in place
@@ -62,6 +74,10 @@
 
 
 # Done
+- [x] Fix nav layouts
+- [x] Add template inheritance to forms, so
+- [x] Rework landing page to be my own
+- [x] Add login functionality
 - [x] Go through argon templates and see if I have all the templates
 - [x] Replace navbar with something useful
 - [x] Create song display snippet
