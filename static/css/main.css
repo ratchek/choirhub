@@ -67,7 +67,6 @@ body {
 }
 
 .main-content {
-  padding: var(--sectionPadding);
   display: flex;
   flex-direction: column;
   align-items: center;
