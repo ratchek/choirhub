@@ -1,7 +1,10 @@
+boto3==1.34.104
 Django==4.2
 django-allauth==0.57.0
 django-sass==1.1.0
+django-storages==1.14.3
 gunicorn==20.1.0
 pdf2image==1.17.0
 psycopg2-binary==2.9.6
 python-decouple==3.8
+

@@ -15,7 +15,7 @@ class Song(models.Model):
     '''
     title = models.CharField(max_length=255)
     # TODO add owner and choir fields once those apps are working
-    # owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='songs')
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='songs')
     # choir = models.ForeignKey(Choir, on_delete=models.CASCADE, related_name='songs')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -25,7 +25,7 @@ class Song(models.Model):
 
 def song_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/songs/<song.title>/<filename>
-    return f'songs/{instance.song.title}/{filename}'
+    return f'{instance.song.owner.username}/{instance.song.title}/{filename}'
 
 class SongScore(models.Model):
     '''

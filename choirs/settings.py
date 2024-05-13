@@ -43,10 +43,15 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # Third party
     'django_sass',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'storages',
+
+    # Local
     'users',
     'core',
     'songs',
@@ -220,6 +225,22 @@ TIME_ZONE = "EST"
 USE_I18N = True
 
 USE_TZ = True
+
+
+# AWS S3 for media storage
+AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
+AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
+AWS_S3_CUSTOM_DOMAIN = "%s.s3.amazonaws.com" % AWS_STORAGE_BUCKET_NAME
+AWS_DEFAULT_ACL = "public-read"
+AWS_S3_OBJECT_PARAMETERS = {
+    "CacheControl": "max-age=86400",
+}
+AWS_S3_REGION_NAME = "us-east-2"
+AWS_S3_SIGNATURE_VERSION = "s3v4"
+DEFAULT_FILE_STORAGE = "choirs.storage_backends.MediaStorage"
+# AWS S3 for media storage
+
 
 
 # Static files (CSS, JavaScript, Images)
