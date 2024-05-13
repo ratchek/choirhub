@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-section {
+section .welcome {
   position: relative;
   width: 100%;
   min-width: 100vh;
@@ -51,7 +51,7 @@ header ul li a {
   text-decoration: none;
 }
 
-.container {
+.welcome-container {
   position: relative;
   width: 100%;
   display: flex;
@@ -59,28 +59,28 @@ header ul li a {
   align-items: center;
 }
 
-.container .text-box {
+.welcome-container .welcome-text-box {
   position: relative;
   max-width: 600px;
 }
 
-.container .text-box h2 {
+.welcome-container .welcome-text-box h2 {
   color: #333;
   font-size: 4em;
   font-weight: 500px;
 }
 
-.container .text-box h2 span {
+.welcome-container .welcome-text-box h2 span {
   color: #017143;
   font-size: 1.2em;
   font-weight: 900;
 }
 
-.container .text-box p {
+.welcome-container .welcome-text-box p {
   color: #333;
 }
 
-.container .text-box a {
+.welcome-container .welcome-text-box a {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
@@ -92,7 +92,7 @@ header ul li a {
   text-decoration: none;
 }
 
-.container .img-box {
+.welcome-container .img-box {
   width: 600px;
   display: flex;
   justify-content: flex-end;
@@ -100,7 +100,7 @@ header ul li a {
   margin-top: 50px;
 }
 
-.container .img-box img {
+.welcome-container .img-box img {
   max-width: 340px;
 }
 

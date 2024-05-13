@@ -10,7 +10,7 @@ $font-family_1: 'Poppins', sans-serif;
 	box-sizing: border-box;
 	font-family: $font-family_1;
 }
-section {
+section .welcome {
 	position: relative;
 	width: 100%;
 	min-width: 100vh;
@@ -49,13 +49,13 @@ header {
 		}
 	}
 }
-.container {
+.welcome-container {
 	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	.text-box {
+	.welcome-text-box {
 		position: relative;
 		max-width: 600px;
 		h2 {
