@@ -80,7 +80,8 @@
       .nav-icon {
         filter: brightness(0.3) invert(1);
         height: 30px;
-        margin: auto
+        margin: auto;
+        vertical-align: middle;
       }
 			a {
 				display: flex;
