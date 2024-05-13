@@ -1,5 +1,6 @@
 # Next
 - [ ] Fix nav layouts
+- [ ] Add template inheritance to forms, so
 - [ ] Rework landing page to be my own
 - [ ] Add login functionality
 - [ ] Add profile views/page
@@ -10,10 +11,17 @@
 - [ ] make sure there's separation of files in the media folder
 
 - [ ] Document project/app responsibilities/structure
+- [ ] Check out recaptcha on sign in, sign up, password reset forms
+- [ ] Check out overridden allauth forms in door2door
+- [ ]
 
 
 # Next week
 - [ ] Add login flows
+- [ ] Add template inheritance to flows
+- [ ] Redirect to logged in page
+- [ ] Add restrictions to logged out pages
+- [ ] Add message flashing
 - [ ] Add profile settings
 - [ ] Fix styles and make it look nice
 - [ ] Add nice landing page
