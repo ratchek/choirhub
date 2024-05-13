@@ -43,6 +43,7 @@
     - [ ] Make all the layouts uniform regardless of number of voices
     - [ ] Fix layout in tablet mode (it's not centered and looks funky)
     - [ ] Decrease size of margin between stuff
+    - [ ] Add email notifications (to me) whenever someone signs up
 
 # After job fair
 - [ ] Rename the project to choirhub
