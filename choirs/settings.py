@@ -161,17 +161,54 @@ AUTHENTICATION_BACKENDS = [
 
 
 # Allauth settings
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_UNIQUE_EMAIL = True
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+# This is hard coded, because reverse() is complaining that app isn't loaded yet
+LOGIN_REDIRECT_URL = "/"
+ACCOUNT_USERNAME_MIN_LENGTH = 5
 ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
 ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 300
+
+## Allauth email settings
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
 ACCOUNT_CHANGE_EMAIL = True
 ACCOUNT_EMAIL_NOTIFICATIONS = True
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
-ACCOUNT_USERNAME_MIN_LENGTH = 3
+
+## Allauth email backend
+if DEVELOPMENT_MODE:
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+else:
+    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+    EMAIL_HOST = config("EMAIL_HOST")
+    EMAIL_PORT = config("EMAIL_PORT")
+    EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+    DEFAULT_FROM_EMAIL = config("EMAIL_HOST_USER")
+    EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+    EMAIL_USE_TLS = False
+    EMAIL_USE_SSL = True
+
+# allauth settings
+# ACCOUNT_FORMS = {
+#     "signup": "myAuth.forms.MyCustomSignupForm",
+#     "change_password": "myAuth.forms.MyCustomChangePasswordForm",
+#     "reset_password": "myAuth.forms.MyCustomResetPasswordForm",
+# }
+
+# recaptcha settings
+# RECAPTCHA_PUBLIC_KEY = config("RECAPTCHA_PUBLIC_KEY")
+# RECAPTCHA_PRIVATE_KEY = config("RECAPTCHA_PRIVATE_KEY")
+# RECAPTCHA_DEFAULT_ACTION = "generic"
+# RECAPTCHA_SCORE_THRESHOLD = 0.5
+# RECAPTCHA_DOMAIN = config("DOMAIN")
+# RECAPTCHA_URL = "https://www.google.com/recaptcha/api/siteverify"
+# RECAPTCHA_TIMEOUT = 5
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
