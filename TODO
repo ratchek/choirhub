@@ -35,6 +35,7 @@
 # Future
 
 - [ ] Check if you can delete bootstrap stylesheet and scripts
+- [ ] Change logout icon in sidenav and delete boxicon styles
 - [ ] Make navbar start out as open on desktop (and as closed on mobile)
 - [ ] Make navbar remember whether the navbar was closed or open when reloading/changing pages (this isn't gonna be that simple. For example, you want the default behavior when having clicked a link on mobile to be for the bar to be hidden on the next page. But you _don't_ want this on desktop. Probably gonna have to use javascript and django's context variables?)
 - [ ] Don't allow user to change attendanceDeclaration once event has passed
