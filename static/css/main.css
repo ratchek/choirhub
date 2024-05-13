@@ -450,6 +450,14 @@ body {
   cursor: pointer;
 }
 
+.top-nav .hamburger {
+  max-width: 35px;
+  filter: brightness(0.5) invert(1);
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
 .top-nav .text {
   color: var(--navTextColor);
   font-size: 35px;
