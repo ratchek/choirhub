@@ -36,7 +36,10 @@
     - [ ] Fix layout in tablet mode (it's not centered and looks funky)
     - [ ] Decrease size of margin between stuff
 
-
+# After job fair
+- [ ] Rename the project to choirhub
+- [ ] Redeploy it properly (right now it is hot garbage)
+- [ ] Double check that django-sass is needed in production requirements
 
 # In production
 - [ ] Figure out a way of serving media files
