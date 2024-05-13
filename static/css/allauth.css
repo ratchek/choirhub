@@ -5,6 +5,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
+  text-align: left;
   /* Style the input fields */
   /* Style the labels for better readability */
   /* Styling the submit button */
@@ -50,7 +51,6 @@
 
 .allauth-forms ul {
   list-style-type: circle;
-  margin: 1em;
   font-size: 0.8em;
 }
 
