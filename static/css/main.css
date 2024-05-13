@@ -406,7 +406,7 @@ body {
   text-decoration: none;
 }
 
-.top-nav li a:hover, .top-nav .dropdown:hover .dropbtn {
+.top-nav li:hover, .top-nav .dropdown:hover .dropbtn {
   background-color: red;
 }
 
