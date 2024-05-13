@@ -484,6 +484,7 @@ body {
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
+    padding: 2rem;
   }
   .cs-title {
     color: --var(headerColor);

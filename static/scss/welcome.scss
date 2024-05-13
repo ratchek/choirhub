@@ -5,17 +5,15 @@ $font-family_1: 'Poppins', sans-serif;
 
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap";
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 	font-family: $font-family_1;
 }
-section .welcome {
+.welcome {
 	position: relative;
 	width: 100%;
 	min-width: 100vh;
   min-height: 100vh;
-	padding: 100px;
+	padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
