@@ -41,8 +41,7 @@
 
     {% if messages %}
         <div>
-            <strong> "Messages:" </strong>
-            <ul>
+            <ul class="flashes">
                 {% for message in messages %}
                 <li>{{message}}</li>
                 {% endfor %}
