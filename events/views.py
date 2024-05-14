@@ -1,10 +1,10 @@
 from typing import Any
 from django.views import generic
 from .models import Event
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-
-class EventView(generic.DetailView):
+class EventView(LoginRequiredMixin, generic.DetailView):
     model = Event
     template_name = 'events/event.html'
     context_object_name = 'event'
@@ -14,7 +14,7 @@ class EventView(generic.DetailView):
         context['page_title'] = f"{context['event'].name}"
         return context
 
-class EventListView(generic.ListView):
+class EventListView(LoginRequiredMixin, generic.ListView):
     model = Event
     template_name = 'events/events.html'
     context_object_name = 'events'

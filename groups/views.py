@@ -1,9 +1,12 @@
 from django.views import generic
 from .models import SongGroup
 import logging
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 logger = logging.getLogger(__name__)
-class GroupView(generic.DetailView):
+
+
+class GroupView(LoginRequiredMixin, generic.DetailView):
     model = SongGroup
     template_name = 'groups/group.html'
     context_object_name = 'group'
@@ -14,7 +17,7 @@ class GroupView(generic.DetailView):
         logger.debug(context)
         return context
 
-class GroupListView(generic.ListView):
+class GroupListView(LoginRequiredMixin, generic.ListView):
     model = SongGroup
     template_name = 'groups/groups.html'
     context_object_name = 'groups'

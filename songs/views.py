@@ -1,15 +1,17 @@
 from django.views import generic
 from .models import Song
 import logging
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 logger = logging.getLogger(__name__)
 
-class SongView(generic.DetailView):
+class SongView(LoginRequiredMixin, generic.DetailView):
     model = Song
     template_name = 'songs/song.html'
     context_object_name = 'song'
 
-class SongListView(generic.ListView):
+class SongListView(LoginRequiredMixin, generic.ListView):
     model = Song
     template_name = 'songs/songs.html'
     context_object_name = 'songs'
