@@ -1,4 +1,9 @@
 # Next
+- [ ] Set up boto3 storage
+- [ ] Create email
+- [ ] Add email host
+- [ ] Add example data to production server
+- [ ] Add email account and update email settings on server
 - [ ] Add name fields to login
 - [ ] Display name in sidenav
 - [ ] Make sidenav logout possible
@@ -10,7 +15,9 @@
 - [ ] Fix mobile view
 - [ ] Fix nav for mobile view
 - [ ] Make sure message flashes appear in mobile view
-
+- [ ] Require username during signup
+- [ ] Move future s3 folders to use username instead of email
+- [ ] Move existing s3 folders to use username instead of email
 
 
 
