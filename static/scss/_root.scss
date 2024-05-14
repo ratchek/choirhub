@@ -17,14 +17,15 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     /* ------------------- NAV STYLES ------------------- */
     --navTextColor: #fff;
-    --navBackgroundHighlightColor: #1d1b31;
     --font-family_1: 'Poppins', sans-serif;
 
 
     --backgroundColor:#fff;
     --contentBackgroundColor:#faf6f6;
-    --topNavBackgroundColor: #1d311e;
-    --sideNavBackgroundColor: #11101d;
+    --topNavBackgroundColor: #141d10;
+    --sideNavBackgroundColor: #141d10;
+    --navBackgroundHighlightColor: #1d362c;
+    --topNavBackgroundHighlightColor: #1d362c;
 }
 
 body {
