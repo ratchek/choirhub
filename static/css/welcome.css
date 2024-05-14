@@ -103,10 +103,21 @@ header ul li a {
 
 .circle {
   position: absolute;
-  top: 0;
+  top: 15em;
   left: 0;
   width: 100%;
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-container .welcome-text-box h2 {
+    font-size: 4em;
+  }
+  .welcome-container .welcome-text-box h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
 }
