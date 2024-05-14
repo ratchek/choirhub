@@ -246,6 +246,10 @@ body {
   align-items: center;
 }
 
+.sidebar .profile-details .name-job {
+  overflow: hidden;
+}
+
 .sidebar .profile-details img {
   height: 52px;
   width: 52px;
