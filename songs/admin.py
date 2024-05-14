@@ -11,6 +11,9 @@ class SongRecordingInline(admin.TabularInline):
     extra = 1
 
 class SongAdmin(admin.ModelAdmin):
+    def get_changeform_initial_data(self, request):
+        # Set the initial value of the 'owner' field to the current user
+        return {'owner': request.user.pk}
     inlines = [SongScoreInline, SongRecordingInline]
 # Register your models here.
 admin.site.register(Song, SongAdmin)
