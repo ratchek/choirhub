@@ -1,11 +1,10 @@
 # Next
 - [ ] Add example data to production server
-- [ ] Make sidenav logout possible
+- [ ] Fix colors
+- [ ] Fix audio in mobile view
 - [ ] Check all allauth templates work
-- [ ] Fix mobile view
-- [ ] Fix nav for mobile view
-- [ ] Make sure message flashes appear in mobile view
 - [ ] Move existing s3 folders to use username instead of email
+- [ ] Add more detailed titles to my templates
 
 
 
@@ -72,6 +71,9 @@
 
 
 # Done
+- [x] Fix mobile view
+- [x] Fix nav for mobile view
+- [x] Make sure message flashes appear in mobile view
 - [x] Move future s3 folders to use username instead of email
 - [x] Update nginx request size
 - [x] Require username during signup
