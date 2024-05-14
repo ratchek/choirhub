@@ -170,7 +170,7 @@ AUTHENTICATION_BACKENDS = [
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 # This is hard coded, because reverse() is complaining that app isn't loaded yet
 LOGIN_REDIRECT_URL = "/"
-ACCOUNT_USERNAME_MIN_LENGTH = 5
+ACCOUNT_USERNAME_MIN_LENGTH = 4
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 300
