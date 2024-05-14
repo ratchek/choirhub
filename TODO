@@ -1,12 +1,10 @@
 # Next
-- [ ] Update nginx request size
 - [ ] Add example data to production server
 - [ ] Make sidenav logout possible
 - [ ] Check all allauth templates work
 - [ ] Fix mobile view
 - [ ] Fix nav for mobile view
 - [ ] Make sure message flashes appear in mobile view
-- [ ] Move future s3 folders to use username instead of email
 - [ ] Move existing s3 folders to use username instead of email
 
 
@@ -42,6 +40,8 @@
 - [ ] Rysiu admin site?
 
 # Future
+- [ ] Limit how many voices a song can have
+- [ ] Limit size of uploads (mp3 and pdf)
 
 - [ ] Check if you can delete bootstrap stylesheet and scripts
 - [ ] Change logout icon in sidenav and delete boxicon styles
@@ -54,6 +54,7 @@
     - [ ] Fix layout in tablet mode (it's not centered and looks funky)
     - [ ] Decrease size of margin between stuff
     - [ ] Add email notifications (to me) whenever someone signs up
+- [ ] Figure out how to make s3 images and recordings only available to someone logged in with the proper user (so that the direct aws links to media don't work without the proper session cookies)
 
 # After job fair
 - [ ] Rename the project to choirhub
@@ -71,6 +72,8 @@
 
 
 # Done
+- [x] Move future s3 folders to use username instead of email
+- [x] Update nginx request size
 - [x] Require username during signup
 - [x] Add email account and update email settings on server
 - [x] Add name fields to login
