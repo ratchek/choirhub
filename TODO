@@ -1,21 +1,11 @@
 # Next
-- [ ] Set up boto3 storage
-- [ ] Create email
-- [ ] Add email host
+- [ ] Update nginx request size
 - [ ] Add example data to production server
-- [ ] Add email account and update email settings on server
-- [ ] Add name fields to login
-- [ ] Display name in sidenav
 - [ ] Make sidenav logout possible
-- [ ] Add a settings page where you can
-    - [ ] Change name
-    - [ ] Change email
-    - [ ] Change password
 - [ ] Check all allauth templates work
 - [ ] Fix mobile view
 - [ ] Fix nav for mobile view
 - [ ] Make sure message flashes appear in mobile view
-- [ ] Require username during signup
 - [ ] Move future s3 folders to use username instead of email
 - [ ] Move existing s3 folders to use username instead of email
 
@@ -81,6 +71,16 @@
 
 
 # Done
+- [x] Require username during signup
+- [x] Add email account and update email settings on server
+- [x] Add name fields to login
+- [x] Display name in sidenav
+- [x] Add a settings page where you can
+    - [x] Change email
+    - [x] Change password
+- [x] Set up boto3 storage
+- [x] Create email
+- [x] Add email host
 - [x] Fix nav layouts
 - [x] Add template inheritance to forms, so
 - [x] Rework landing page to be my own
