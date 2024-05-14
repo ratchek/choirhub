@@ -53,6 +53,7 @@ INSTALLED_APPS = [
 
     # Local
     'users',
+    'myAuth',
     'core',
     'songs',
     'groups',
