@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap";
 :root {
   /* ------------------- CS STYLES ------------------- */
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
@@ -20,12 +21,15 @@
   --navBackgroundColor: #11101d;
   --navBackgroundHighlightColor: #1d1b31;
   --font-family_1: 'Poppins', sans-serif;
+  --background-color:#fff;
+  --content-background-color:#faf6f6;
+  --top-nav-background-color: #1d311e;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #dfe5f3;
+  background: var(--background-color);
 }
 
 *, *:before, *:after {
@@ -72,7 +76,11 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: green;
+  background-color: var(--background-color);
+}
+
+.container {
+  margin-top: 4em;
 }
 
 .sidebar {
@@ -385,7 +393,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #38444d;
+  background-color: var(--top-nav-background-color);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -575,6 +583,8 @@ body.dark-mode #cs-content-831 .cs-text {
   animation: fadeOut 4s ease-in forwards;
   /* Animation to fade out */
   animation-delay: 2s;
+  z-index: 1000;
+  /* Ensure it's on top of everything */
 }
 
 @keyframes fadeOut {
@@ -632,4 +642,134 @@ body.dark-mode #cs-content-831 .cs-text {
   background-color: #ddd;
   /* Neutral color for the horizontal rule */
   margin: 15px 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  display: flex;
+  justify-content: space-between;
+  background: var(--content-background-color);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 800;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.welcome-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-container .welcome-text-box {
+  margin-top: 2em;
+  position: relative;
+  max-width: 600px;
+}
+
+.welcome-container .welcome-text-box h2 {
+  color: #333;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.welcome-container .welcome-text-box h2 span {
+  color: #017143;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.welcome-container .welcome-text-box p {
+  color: #333;
+}
+
+.welcome-container .welcome-text-box a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #017143;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.welcome-container .img-box {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.welcome-container .img-box img {
+  max-width: 340px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #639982;
+  /* Adjust the circle size and position */
+  clip-path: circle(65% at 100% 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    align-items: center;
+    padding-top: 0;
+  }
+  .welcome .welcome-container {
+    align-items: center;
+  }
+  .welcome .welcome-container .welcome-text-box h2 {
+    font-size: 4em;
+  }
+  .welcome .welcome-container .welcome-text-box h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
 }
