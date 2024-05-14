@@ -1,5 +1,6 @@
 # Next
 - [ ] Add example data to production server
+- [ ] Make sure only logged in people have access to logged in views
 - [ ] Fix colors
 - [ ] Fix audio in mobile view
 - [ ] Check all allauth templates work
