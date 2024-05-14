@@ -12,6 +12,7 @@ class EventView(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)
         context['page_title'] = f"{context['event'].name}"
+        context['page_subtitle'] = f"{context['event'].date}"
         return context
 
 class EventListView(LoginRequiredMixin, generic.ListView):
