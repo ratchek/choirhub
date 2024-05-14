@@ -16,8 +16,12 @@ $font-family_1: 'Poppins', sans-serif;
 	display: flex;
 	justify-content: space-between;
 	background: var(--contentBackgroundColor);
-  border-radius: 30px;
-
+  /* Layered shadows */
+  box-shadow:
+      0 5px 15px rgba(0, 0, 0, 0.3),  /* Softer larger shadow */
+      0 10px 20px rgba(0, 0, 0, 0.2), /* Medium shadow */
+      0 15px 25px rgba(0, 0, 0, 0.1); /* Largest but lightest shadow */
+  border-radius: 10px; /* Optional: adds rounded corners */
 }
 header {
 	position: absolute;
