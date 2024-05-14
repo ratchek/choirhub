@@ -1,18 +1,27 @@
 $color_1: #333;
 $font-family_1: Arial, sans-serif;
-$background-color_1: #f9f9f9;
+$background-color_1: #faf6f6;
 
 .song-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    border: 1px solid #ccc;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
+    margin-bottom: 50px;
     background-color: $background-color_1;
     flex-wrap: wrap;
+    border-radius: 25% 15%;
+    text-align: left;
 
+
+    /* Layered shadows */
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3),  /* Softer larger shadow */
+        0 10px 20px rgba(0, 0, 0, 0.2), /* Medium shadow */
+        0 15px 25px rgba(0, 0, 0, 0.1); /* Largest but lightest shadow */
+    border-radius: 10px; /* Optional: adds rounded corners */
     .image-column {
       width: 100%;
 
@@ -32,17 +41,23 @@ $background-color_1: #f9f9f9;
 
     .recording-column{
       width: 100%;
-      margin: 5% 10%;
+      margin: 5%;
+      .song-title{
+          font-weight: 700;
+          margin-bottom: 30px;
+      }
+
 
       .recordings {
           max-width: 100%;
+          margin-left: 2%;
           .recording {
-              max-width: 100%;
+              width: 100%;
               margin-top: 10px;
               padding-bottom: 10px;
           }
           audio {
-              max-width: 100%;
+              width: 85%;
               display: block;
           }
       }

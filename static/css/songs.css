@@ -3,11 +3,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  border: 1px solid #ccc;
   padding: 20px;
-  margin-bottom: 20px;
-  background-color: #f9f9f9;
+  margin: 20px;
+  margin-bottom: 50px;
+  background-color: #faf6f6;
   flex-wrap: wrap;
+  border-radius: 25% 15%;
+  text-align: left;
+  /* Layered shadows */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 25px rgba(0, 0, 0, 0.1);
+  /* Largest but lightest shadow */
+  border-radius: 10px;
+  /* Optional: adds rounded corners */
 }
 
 .song-section .image-column {
@@ -28,21 +35,27 @@
 
 .song-section .recording-column {
   width: 100%;
-  margin: 5% 10%;
+  margin: 5%;
+}
+
+.song-section .recording-column .song-title {
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .song-section .recording-column .recordings {
   max-width: 100%;
+  margin-left: 2%;
 }
 
 .song-section .recording-column .recordings .recording {
-  max-width: 100%;
+  width: 100%;
   margin-top: 10px;
   padding-bottom: 10px;
 }
 
 .song-section .recording-column .recordings audio {
-  max-width: 100%;
+  width: 85%;
   display: block;
 }
 
