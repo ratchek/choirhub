@@ -19,7 +19,7 @@
                 <i class='bx bxs-chevron-down arrow' ></i>
             </div>
             <ul class="sub-menu">
-                <li><a class="link_name" href="#">Songs</a></li>
+                <li><a class="link_name" href="{% url 'song-list' %}">Songs</a></li>
                 {% for song in nav_songs %}
                 <li><a href="{% url 'song-detail' song.id %}">{{song.title}}</a></li>
                 {% endfor %}
