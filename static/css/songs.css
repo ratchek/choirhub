@@ -1,3 +1,7 @@
+.song-list {
+  padding-left: 0;
+}
+
 .song-section {
   display: flex;
   flex-direction: column;

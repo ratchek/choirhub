@@ -546,8 +546,17 @@ body {
 .page-header h2 {
   font-weight: 700;
   /* Bold font weight for emphasis */
-  font-size: 4em;
+  font-size: 2em;
   /* Large size for visibility */
+}
+
+@media screen and (min-width: 769px) {
+  .page-header h2 {
+    font-weight: 700;
+    /* Bold font weight for emphasis */
+    font-size: 4em;
+    /* Large size for visibility */
+  }
 }
 
 /* -----------MESSAGE FLASHING-------------- */
