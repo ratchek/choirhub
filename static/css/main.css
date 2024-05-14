@@ -655,8 +655,9 @@ body {
 
 .welcome {
   position: relative;
-  width: 100%;
+  width: 90%;
   min-height: 80vh;
+  margin: 20px;
   padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   display: flex;
   justify-content: space-between;

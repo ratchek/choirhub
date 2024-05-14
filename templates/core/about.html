@@ -14,7 +14,10 @@
                 Whether you're arranging practice materials or preparing for a performance, the Choirs App simplifies song management by enabling you to create customizable song groups and access everything in one organized place.</p>
                 <p>
                 Elevate your choir's practice experience, foster collaboration, and ensure each member hits the right note, every time. Get started today and bring harmony and precision to your choir rehearsals!</p>
+                {% if user.is_authenticated %}
+                {% else %}
                 <a href="{% url 'account_signup'%}">Try it out!</a>
+                {% endif %}
             </div>
         </div>
 
