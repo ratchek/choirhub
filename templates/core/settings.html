@@ -1,0 +1,17 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+    <div class="user-settings">
+    <h2>Account Settings</h2>
+    <div class="profile-actions">
+        <a href="{% url 'account_email' %}" onclick="changeEmail()" class="profile-link">Change Email</a>
+        <hr>
+        <a href="{% url 'account_change_password' %}" onclick="changePassword()" class="profile-link">Change Password</a>
+        <hr>
+        <a href="{% url 'account_logout' %}" onclick="logout()" class="profile-link">Logout</a>
+    </div>
+</div>
+{% endblock content %}
