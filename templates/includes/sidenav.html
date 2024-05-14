@@ -8,7 +8,7 @@
     </a>
 
     <ul class="nav-links">
-        <li class="nav_li_with_dropdown">
+        {% comment %} <li class="nav_li_with_dropdown">
             <div class="icon-link">
                 <a href="#">
                 <div class="nav-icon-container">
@@ -23,6 +23,20 @@
                 {% for song in nav_songs %}
                 <li><a href="{% url 'song-detail' song.id %}">{{song.title}}</a></li>
                 {% endfor %}
+            </ul>
+        </li> {% endcomment %}
+
+        <li class="nav_li_with_dropdown">
+            <div class="icon-link">
+                <a href="{% url "song-list" %}">
+                <div class="nav-icon-container">
+                    <img class ='nav-icon' src="{% static 'img/icons/music-note-3-svgrepo-com.svg' %}" alt="grouped notes">
+                </div>
+                <span class="link_name">Songs</span>
+                </a>
+            </div>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="{% url 'song-list' %}">Songs</a></li>
             </ul>
         </li>
 
