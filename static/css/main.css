@@ -18,18 +18,18 @@
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   /* ------------------- NAV STYLES ------------------- */
   --navTextColor: #fff;
-  --navBackgroundColor: #11101d;
   --navBackgroundHighlightColor: #1d1b31;
   --font-family_1: 'Poppins', sans-serif;
-  --background-color:#fff;
-  --content-background-color:#faf6f6;
-  --top-nav-background-color: #1d311e;
+  --backgroundColor:#fff;
+  --contentBackgroundColor:#faf6f6;
+  --topNavBackgroundColor: #1d311e;
+  --sideNavBackgroundColor: #11101d;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: var(--background-color);
+  background: var(--backgroundColor);
 }
 
 *, *:before, *:after {
@@ -76,7 +76,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--background-color);
+  background-color: var(--backgroundColor);
 }
 
 .container {
@@ -89,7 +89,7 @@ body {
   left: 0;
   height: 100%;
   width: 260px;
-  background: var(--navBackgroundColor);
+  background: var(--sideNavBackgroundColor);
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -393,7 +393,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--top-nav-background-color);
+  background-color: var(--topNavBackgroundColor);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -656,7 +656,7 @@ body.dark-mode #cs-content-831 .cs-text {
   padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   display: flex;
   justify-content: space-between;
-  background: var(--content-background-color);
+  background: var(--contentBackgroundColor);
 }
 
 header {
