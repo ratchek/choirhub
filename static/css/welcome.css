@@ -7,7 +7,6 @@
 .welcome {
   position: relative;
   width: 100%;
-  min-width: 100vh;
   min-height: 100vh;
   padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   display: flex;
@@ -64,8 +63,8 @@ header ul li a {
 
 .welcome-container .welcome-text-box h2 {
   color: #333;
-  font-size: 4em;
-  font-weight: 500px;
+  font-size: 2em;
+  font-weight: 500;
 }
 
 .welcome-container .welcome-text-box h2 span {
