@@ -55,6 +55,7 @@
     - [ ] Decrease size of margin between stuff
     - [ ] Add email notifications (to me) whenever someone signs up
 - [ ] Figure out how to make s3 images and recordings only available to someone logged in with the proper user (so that the direct aws links to media don't work without the proper session cookies)
+- [ ] Add ability to delete your account!!
 
 # After job fair
 - [ ] Rename the project to choirhub
