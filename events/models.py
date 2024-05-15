@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from songs.models import Song
+from datetime import date
 # from choirs.models import Choir
 
 class Event(models.Model):
@@ -18,6 +19,10 @@ class Event(models.Model):
     songs = models.ManyToManyField(Song, related_name='events', blank=True) # songs that will be performed at the event
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    @property
+    def is_over(self):
+        return date.today() > self.date
 
     def __str__(self):
         return self.name

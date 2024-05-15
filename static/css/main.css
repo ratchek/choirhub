@@ -228,6 +228,10 @@ body {
   opacity: 1;
 }
 
+.sidebar .nav-links li .sub-menu .past-event {
+  color: #ffa5a5;
+}
+
 .sidebar .nav-links li .sub-menu .link_name {
   display: none;
 }
