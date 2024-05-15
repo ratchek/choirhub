@@ -535,6 +535,9 @@ body {
     display: flex;
     width: 100%;
   }
+  .top-nav .top-nav-desktop .last-right {
+    margin-right: 1em;
+  }
   .top-nav #top-nav-mobile {
     display: none;
   }

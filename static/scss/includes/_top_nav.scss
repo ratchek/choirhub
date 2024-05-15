@@ -15,6 +15,7 @@ $top-nav-height: 60px;
     li {
       float: left;
       list-style: none;
+
     }
 
     li a, li i, li.toggle-sidebar, .dropbtn {
@@ -87,6 +88,8 @@ $top-nav-height: 60px;
         // Hide desktop nav on small screens
     .top-nav-desktop{
       display: none;
+
+
     }
 
     .top-nav-toggle{
@@ -129,6 +132,9 @@ $top-nav-height: 60px;
     .top-nav-desktop{
       display: flex;
       width: 100%;
+      .last-right{
+        margin-right: 1em;
+      }
     }
     #top-nav-mobile{
       display: none;

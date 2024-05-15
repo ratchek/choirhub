@@ -14,7 +14,7 @@
             <li class='first-right'><a href="{% url 'account_logout' %}">Log out</a></li>
         {% else %}
             <li class='first-right'><a href="{% url 'account_login' %}">Log in</a></li>
-            <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+            <li class='last-right'><a href="{% url 'account_signup' %}">Sign Up</a></li>
         {% endif %}
 
 
