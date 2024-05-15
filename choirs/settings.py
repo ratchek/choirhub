@@ -32,7 +32,7 @@ DEVELOPMENT_MODE = config("DEVELOPMENT_MODE", default=False, cast=bool) == True
 if DEVELOPMENT_MODE:
     ALLOWED_HOSTS = ["localhost"]
 else:
-    ALLOWED_HOSTS = [config("DOMAIN"), "www." + config("DOMAIN")]
+    ALLOWED_HOSTS = [config("DOMAIN"), "www." + config("DOMAIN"), config("DOMAIN2"), "www." + config("DOMAIN2")]
 
 # Application definition
 
