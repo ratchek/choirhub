@@ -27,6 +27,7 @@
   --topNavBackgroundHighlightColor: #1d362c;
   --settingsHighlightColor: #639982;
   --settingsTextColor: #294d3e;
+  --choirhubTextColor: #639982;
 }
 
 body {
@@ -142,6 +143,12 @@ body {
   font-weight: 600;
   transition: opacity 0.4s ease;
   transition-delay: 0.1s;
+}
+
+.sidebar .logo-details .logo_name .choirhub-text {
+  color: var(--choirhubTextColor);
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 .sidebar .nav-links {
@@ -730,7 +737,7 @@ header ul li a {
 
 .welcome-container .welcome-text-box h2 {
   color: #333;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 500;
 }
 
@@ -754,6 +761,12 @@ header ul li a {
   font-weight: 500;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+.welcome-container .welcome-text-box .choirhub-text {
+  color: #00633a;
+  font-weight: 700;
+  font-size: 1.1em;
 }
 
 .welcome-container .img-box {

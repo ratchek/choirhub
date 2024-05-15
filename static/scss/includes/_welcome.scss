@@ -1,6 +1,7 @@
 $color_1: #333;
 $color_2: #017143;
 $color_3: #fff;
+$choirhub_color: #00633a;
 $font-family_1: 'Poppins', sans-serif;
 
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap";
@@ -64,7 +65,7 @@ header {
 		max-width: 600px;
 		h2 {
 			color: $color_1;
-			font-size: 2em;
+			font-size: 3em;
 			font-weight: 500;
 			span {
 				color: $color_2;
@@ -86,6 +87,11 @@ header {
 			letter-spacing: 1px;
 			text-decoration: none;
 		}
+    .choirhub-text{
+      color: $choirhub_color;
+      font-weight: 700;
+      font-size: 1.1em;
+    }
 	}
 	.img-box {
 		width: 600px;
