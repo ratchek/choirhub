@@ -27,9 +27,9 @@ $background-color_1: #faf6f6;
     border-radius: 10px; /* Optional: adds rounded corners */
     .image-column {
       width: 100%;
+      margin: auto;
 
       .score-image {
-          margin: auto;
           img {
               width: 100%;
               max-width: 400px;

@@ -23,6 +23,7 @@
 
 .song-section .image-column {
   width: 100%;
+  margin: auto;
 }
 
 .song-section .image-column .score-image img {
