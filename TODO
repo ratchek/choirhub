@@ -1,6 +1,5 @@
 # Next
 - [ ] Add "download score" button to mobile
-- [ ] Make image of score a link to pdf of score on desktop
 - [ ] Move existing s3 folders to use username instead of email
 - [ ] Add more detailed titles to my templates
 
@@ -43,6 +42,7 @@
 - [ ] Add ability to delete your account!!
 - [ ] Update docs
 - [ ] Add tests
+- [ ] Make sure that all the links to audio, score images, AND SCORE LINKS are aws presigned urls (of figure out some other way to keep choirleaders files secure from the public)
 
 # After job fair
 - [ ] Rename the project to choirhub
@@ -60,6 +60,7 @@
 
 
 # Done
+- [x] Make image of score a link to pdf of score on desktop
 - [x] Add message flashing
 - [x] Add profile settings
 - [x] Fix styles and make it look nice
