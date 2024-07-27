@@ -43,7 +43,7 @@
 - [ ] Update docs
 - [ ] Add tests
 - [ ] Make sure that all the links to audio, score images, AND SCORE LINKS are aws presigned urls (of figure out some other way to keep choirleaders files secure from the public)
-
+- [ ] Make score display in lightbox instead of redirecting to AWS pdf? (there's notes about how to do this and pitfalls at the bottom of this TODO)
 # After job fair
 - [ ] Rename the project to choirhub
 - [ ] Redeploy it properly (right now it is hot garbage)
@@ -107,3 +107,7 @@
 
 
 
+# Using lightbox to display scores
+- Use this library https://fslightbox.com/javascript
+- When getting a cors/no-input error, you need to add the data-type to the image html like explained here https://fslightbox.com/javascript/documentation/types
+- You'll need to create a separate image file in the django model to represent a full-quality image (or maybe create just a full image by default and then check if CloudFront has services that serve the image in a smaller size when just using it inline vs when you want to do the full-screen lightbox). I dont' know how much this would cost!! If there's a lot of users and a lot of scores, the extra space needed could add up quickly
