@@ -1,9 +1,6 @@
 # Next
-- [ ] Add example data to production server
-- [ ] Make sure only logged in people have access to logged in views
-- [ ] Fix colors
-- [ ] Fix audio in mobile view
-- [ ] Check all allauth templates work
+- [ ] Add "download score" button to mobile
+- [ ] Make image of score a link to pdf of score on desktop
 - [ ] Move existing s3 folders to use username instead of email
 - [ ] Add more detailed titles to my templates
 
@@ -24,19 +21,7 @@
 
 
 # Next week
-- [ ] Add login flows
-- [ ] Add template inheritance to flows
-- [ ] Redirect to logged in page
-- [ ] Add restrictions to logged out pages
-- [ ] Add message flashing
-- [ ] Add profile settings
-- [ ] Fix styles and make it look nice
-- [ ] Add nice landing page
-- [ ] Add index page
-- [ ] Find a way to delete dash in head title (when there's no additional title comming in from django allauth)
 - [ ] Add favicon
-- [ ] Deploy
-- [ ] Upload test data
 - [ ] Rysiu admin site?
 
 # Future
@@ -56,6 +41,8 @@
     - [ ] Add email notifications (to me) whenever someone signs up
 - [ ] Figure out how to make s3 images and recordings only available to someone logged in with the proper user (so that the direct aws links to media don't work without the proper session cookies)
 - [ ] Add ability to delete your account!!
+- [ ] Update docs
+- [ ] Add tests
 
 # After job fair
 - [ ] Rename the project to choirhub
@@ -73,6 +60,19 @@
 
 
 # Done
+- [x] Add message flashing
+- [x] Add profile settings
+- [x] Fix styles and make it look nice
+- [x] Add nice landing page
+- [x] Add index page
+- [x] Find a way to delete dash in head title (when there's no additional title comming in from django allauth)
+- [x] Deploy
+- [x] Upload test data
+- [x] Add example data to production server
+- [x] Make sure only logged in people have access to logged in views
+- [x] Fix colors
+- [x] Fix audio in mobile view
+- [x] Check all allauth templates work
 - [x] Fix mobile view
 - [x] Fix nav for mobile view
 - [x] Make sure message flashes appear in mobile view
