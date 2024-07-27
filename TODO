@@ -57,6 +57,7 @@
 - [ ] Make sure HTTPS is enabled
 - [ ] Change allauth setting ACCOUNT_DEFAULT_HTTP_PROTOCOL to 'https'
 - [ ] Change allauth setting ACCOUNT_EMAIL_VERIFICATION to 'mandatory'
+- [ ] Read through ALL TODOs make sure none of them are necessary before deploy
 
 
 # Done
