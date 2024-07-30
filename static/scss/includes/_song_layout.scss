@@ -65,7 +65,25 @@ $background-color_1: #faf6f6;
               display: block;
           }
       }
+
+      .score-button {
+        max-width: 70%;
+        margin: 40px 0;
+
+        a {
+          padding: 8px 20px;
+          background: #017143;
+          color: #fff;
+          border-radius: 40px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-decoration: none;
+        }
+      }
+
+
     }
+
 }
 
 @media (min-width: 769px) {
@@ -82,6 +100,10 @@ $background-color_1: #faf6f6;
                   display: block;
               }
           }
+      }
+
+      .score-button {
+          display: none;
       }
     }
     .recording-column {
