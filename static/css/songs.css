@@ -62,6 +62,11 @@
 .song-section .recording-column .recordings audio {
   width: 85%;
   display: block;
+  border-radius: 10px;
+}
+
+.song-section .recording-column .recordings audio::-webkit-media-controls-panel {
+  background-color: #faf6f6;
 }
 
 .song-section .recording-column .score-button {
@@ -137,19 +142,17 @@
   filter: brightness(0.3) invert(1);
 }
 
-.loopButton:hover {
-  background: #017143;
-  /* Lightens the background on hover */
-}
-
-.loopButton:hover {
-  background: #017143;
-}
-
 .loopButton.active {
   background: #017143;
 }
 
-.loopButton.active:hover {
-  background: #faf6f6;
+@media (hover: hover) and (pointer: fine) {
+  .loopButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+  .loopButton:hover .loop-icon {
+    transform: rotate(10deg);
+    transition: transform 0.2s ease;
+  }
 }

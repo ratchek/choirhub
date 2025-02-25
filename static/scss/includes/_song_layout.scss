@@ -64,6 +64,10 @@ $loop_button_secondary_color: #017143;
           audio {
               width: 85%;
               display: block;
+              border-radius: 10px;
+          }
+          audio::-webkit-media-controls-panel {
+            background-color: $background-color_1;
           }
       }
 
@@ -146,20 +150,21 @@ $loop_button_secondary_color: #017143;
 	filter: brightness(0.3) invert(1);
 }
 
-.loopButton:hover {
-  background: $loop_button_secondary_color;        /* Lightens the background on hover */
-}
-
-.loopButton:hover {
-  background: $loop_button_secondary_color;  // Normal hover state
-}
-
 // When active, the button normally shows the hover color:
 .loopButton.active {
   background: $loop_button_secondary_color;
 }
 
-// But when an active button is hovered, it reverts to the default color:
-.loopButton.active:hover {
-  background: $background-color_1;
+// Add hover effects on platforms that support hover
+@media (hover: hover) and (pointer: fine) {
+  .loopButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+  .loopButton:hover .loop-icon {
+    transform: rotate(10deg);
+    transition: transform 0.2s ease;
+  }
 }
+
+
