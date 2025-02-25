@@ -98,3 +98,58 @@
     flex: 1;
   }
 }
+
+.audio-loop-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Provides consistent spacing between the audio element and the button */
+}
+
+/* Allow the audio element to fill available space */
+.audio-loop-container audio {
+  flex: 1;
+  width: auto;
+}
+
+.loopButton {
+  background: #333;
+  /* Uses site's primary color */
+  color: #faf6f6;
+  /* Ensures good contrast */
+  border: none;
+  padding: 8px 12px;
+  /* Adequate padding for a clickable area */
+  border-radius: 5px;
+  /* Slightly rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  outline: none;
+}
+
+.loopButton img.loop-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.3) invert(1);
+}
+
+.loopButton:hover {
+  background: #017143;
+  /* Lightens the background on hover */
+}
+
+.loopButton:hover {
+  background: #017143;
+}
+
+.loopButton.active {
+  background: #017143;
+}
+
+.loopButton.active:hover {
+  background: #faf6f6;
+}

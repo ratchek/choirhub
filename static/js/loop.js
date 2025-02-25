@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle the loop property
         audio.loop = !audio.loop;
 
-        // Optionally, update the button text to indicate loop status
-        button.textContent = audio.loop ? "🔁 On" : "🔁";
+        // Switch css to show it's active
+        button.classList.toggle('active', audio.loop);
       }
     });
   });
