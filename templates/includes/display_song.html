@@ -5,10 +5,12 @@
                 {% for recording in song.recordings.all %}
                 <div class="recording">
                     <h3 class="recording-title">{{recording.voice_group}}</h3>
-                    <audio controls>
-                        <source src="{{recording.file.url}}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                    <div> <button class="loopButton">🔁</button>
+                        <audio controls>
+                            <source src="{{recording.file.url}}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
                 </div>
                 {% endfor %}
               </div>
