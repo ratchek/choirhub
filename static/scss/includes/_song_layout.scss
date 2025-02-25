@@ -73,7 +73,7 @@ $loop_button_secondary_color: #017143;
 
       .score-button-long, .score-button-short{
         max-width: 70%;
-        margin: 40px 0;
+        margin: 20px 0;
 
         a {
           padding: 8px 20px;
@@ -98,7 +98,7 @@ $loop_button_secondary_color: #017143;
   display: none;
 }
 .score-button-short {
-  display: inline;
+  display: inline-block;
 }
 
 @media (min-width: 769px) {
@@ -128,9 +128,9 @@ $loop_button_secondary_color: #017143;
     }
 }
 
-@media (min-width: 405px) and (max-width: 769px) {
+@media (min-width: 425px) and (max-width: 769px) {
       .score-button-long {
-          display: inline;
+          display: inline-block;
       }
       .score-button-short {
           display: none;
