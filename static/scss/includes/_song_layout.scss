@@ -71,7 +71,7 @@ $loop_button_secondary_color: #017143;
           }
       }
 
-      .score-button {
+      .score-button-long, .score-button-short{
         max-width: 70%;
         margin: 40px 0;
 
@@ -87,8 +87,18 @@ $loop_button_secondary_color: #017143;
       }
 
 
+
     }
 
+}
+
+// Mobile first design
+// Don't move this inside the other css blocks. Doesn't work for some reason
+.score-button-long {
+  display: none;
+}
+.score-button-short {
+  display: inline;
 }
 
 @media (min-width: 769px) {
@@ -107,13 +117,24 @@ $loop_button_secondary_color: #017143;
           }
       }
 
-      .score-button {
+      .score-button-long,
+      .score-button-short {
           display: none;
       }
     }
+
     .recording-column {
       flex: 1;
     }
+}
+
+@media (min-width: 405px) and (max-width: 769px) {
+      .score-button-long {
+          display: inline;
+      }
+      .score-button-short {
+          display: none;
+      }
 }
 
 

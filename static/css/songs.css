@@ -69,12 +69,12 @@
   background-color: #faf6f6;
 }
 
-.song-section .recording-column .score-button {
+.song-section .recording-column .score-button-long, .song-section .recording-column .score-button-short {
   max-width: 70%;
   margin: 40px 0;
 }
 
-.song-section .recording-column .score-button a {
+.song-section .recording-column .score-button-long a, .song-section .recording-column .score-button-short a {
   padding: 8px 20px;
   background: #017143;
   color: #fff;
@@ -82,6 +82,14 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-decoration: none;
+}
+
+.score-button-long {
+  display: none;
+}
+
+.score-button-short {
+  display: inline;
 }
 
 @media (min-width: 769px) {
@@ -96,11 +104,21 @@
   .song-section .image-column .score-image img {
     display: block;
   }
-  .song-section .score-button {
+  .song-section .score-button-long,
+.song-section .score-button-short {
     display: none;
   }
   .recording-column {
     flex: 1;
+  }
+}
+
+@media (min-width: 405px) and (max-width: 769px) {
+  .score-button-long {
+    display: inline;
+  }
+  .score-button-short {
+    display: none;
   }
 }
 
