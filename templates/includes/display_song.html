@@ -2,7 +2,13 @@
 
       <div class="song-section">
           <div class="recording-column">
-              <h2 class="song-title">{{song.title}}</h2>
+              <h2 class="song-title">{{song.title}}
+                {% if song.external_link %}
+                    <a href="#" class="external-link-arrow" >⭧</a>
+                {% endif %}
+
+
+              </h2>
               <div class="recordings">
                 {% for recording in song.recordings.all %}
                 <div class="recording">

@@ -21,6 +21,12 @@
   /* Optional: adds rounded corners */
 }
 
+.song-section .external-link-arrow {
+  text-decoration: none;
+  color: #00633a;
+  font-weight: 1000;
+}
+
 .song-section .image-column {
   width: 100%;
   margin: auto;

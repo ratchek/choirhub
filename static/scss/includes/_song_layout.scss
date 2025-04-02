@@ -2,6 +2,7 @@ $color_1: #333;
 $font-family_1: Arial, sans-serif;
 $background-color_1: #faf6f6;
 $loop_button_secondary_color: #017143;
+$choirhub_color: #00633a;
 
 .song-list{
   padding-left: 0;
@@ -19,6 +20,11 @@ $loop_button_secondary_color: #017143;
     border-radius: 25% 15%;
     text-align: left;
 
+    .external-link-arrow {
+      text-decoration: none;
+      color: $choirhub_color;
+      font-weight: 1000;
+    }
 
     /* Layered shadows */
     box-shadow:
