@@ -6,6 +6,7 @@
 
 
 
+
 - [ ] Add profile views/page
 - [ ] Add choir leader views/flows
 - [ ] Add AJAX for choir leader views/flows in place
@@ -16,7 +17,9 @@
 - [ ] Document project/app responsibilities/structure
 - [ ] Check out recaptcha on sign in, sign up, password reset forms
 - [ ] Check out overridden allauth forms in door2door
-- [ ]
+- [ ] Add setting to let user make audio looping default or not
+- [ ] Add setting to decide how many events to display
+- [ ] Add possibility to add a link instead of audio for a voice?
 
 
 # Next week
